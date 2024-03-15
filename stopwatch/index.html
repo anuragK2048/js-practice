@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+</head>
+<style>
+    body{
+        height : 100vh;
+        background: linear-gradient(to top left,red,rgb(209, 181, 181))
+    }
+    #heading{
+        text-align: center;
+        width: 100%;
+    }
+    .divtimer{
+       width : 100%;
+       text-align: center; 
+    }
+    .timerbtn{
+        height: 60px;
+        width: 50px;
+    }
+    .actionbtn{
+        margin-top: 10px;
+        height :30px;
+        width: 60px;
+    }
+    .lapsection{
+        display: flex;
+        font-size: larger;
+    }
+    .laptime{
+        margin-left: 30px;
+    }
+</style>
+<body>
+    <h1 id="heading">STOPWATCH</h1>
+    <div class="divtimer">
+        <button class="timerbtn" id="hourbtn">00</button>
+        <span>:</span>
+        <button class="timerbtn" id="minutebtn">00</button>
+        <span>:</span>
+        <button class="timerbtn" id="secondbtn">00</button>
+    </div>
+    <div class="divtimer">
+        <button class="actionbtn" id="startbtn">Start</button>
+        <button class="actionbtn" id="stopbtn">Stop</button>
+        <button class="actionbtn" id="resetbtn">Reset</button>
+        <button class="actionbtn" id="lapbtn">Lap</button>
+    </div>
+    <h2 class="lapshead">Laps</h2>
+    <script src="script.js"></script>
+</body>
+</html>
