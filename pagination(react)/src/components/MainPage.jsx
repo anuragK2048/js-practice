@@ -32,10 +32,10 @@ function MainPage() {
       //   console.log(data);
       const totalPages = Math.ceil(data.total / elementPerPage);
       //   console.log(totalPages);
-      const allPagesArr = [];
-      for (let i = 0; i < totalPages; i++) {
-        allPagesArr.push(i);
-      }
+      const allPagesArr = [...Array(totalPages).keys()];
+      // for (let i = 0; i < totalPages; i++) {
+      //   allPagesArr.push(i);
+      // }
       setAllPages(allPagesArr);
       const overLimiting = !(
         elementPerPage * selectedPage <=
